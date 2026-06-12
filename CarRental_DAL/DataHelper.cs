@@ -1,0 +1,89 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace CarRental_DAL
+{
+    public class DataHelper
+    {
+
+        //static public string ConnectionString = "Server=.;Database=CarRental;User=sa;Password=sa123456";
+        static public string ConnectionString = ConfigurationManager.ConnectionStrings["CarRentalConnection"].ConnectionString;
+     // static public string MasterConnection = @"Server=.;Database=master;Trusted_Connection=true";
+        static public string MasterConnection = ConfigurationManager.ConnectionStrings["MasterConnection"].ConnectionString;
+
+
+        static public bool CheckConnection()
+        {
+            SqlConnection connection=new SqlConnection(ConnectionString);
+
+            try
+            {
+                connection.Open();
+                connection.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                connection.Close();
+                return false;
+            }
+
+        }
+
+        static public bool RestoreDataBase(string Path)
+        {
+            SqlConnection connection = new SqlConnection(MasterConnection);
+            string Query = @"RESTORE DataBase CarRental FROM DISK =@Path";
+            SqlCommand command= new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@Path", Path);
+            try 
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                connection.Close ();
+                return false;
+            }
+
+
+
+
+        }
+
+        static public bool BackupDatabase(string Path)
+        {
+            Path += "\\CarRental.bak";
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string Query = @"Backup DataBase CarRental To DISK =@Path";
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@Path", Path);
+            try
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                connection.Close();
+                return false;
+            }
+
+
+
+
+        }
+
+
+    }
+}
