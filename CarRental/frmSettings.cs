@@ -21,6 +21,7 @@ namespace CarRental
 
         private void frmSettings_Load(object sender, EventArgs e)
         {
+            //Set Language checkbox
             if(Properties.Settings.Default.Language=="en")
                 cbLanguage.SelectedIndex= 0;
             else
