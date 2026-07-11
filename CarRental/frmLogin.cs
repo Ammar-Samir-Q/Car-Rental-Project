@@ -205,26 +205,27 @@ namespace CarRental
 
         private void btnRestoreDataBase_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd=new OpenFileDialog();
-            ofd.Title = "Select DataBase Path";
-            if(ofd.ShowDialog() == DialogResult.OK)
-            {
-                if(!File.Exists(ofd.FileName))
-                {
-                    MessageBox.Show("DataBase Not Found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                if(DataHelper.RestoreDataBase(ofd.FileName))
-                {
-                    MessageBox.Show("DataBase Restored Successfully System Will Restart", "Restored", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Application.Restart();
-                }
-                else
-                {
-                    MessageBox.Show("Faild To Restore DataBase", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show("This Feature Is Not Implemented yet","Coming Soon",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            //OpenFileDialog ofd=new OpenFileDialog();
+            //ofd.Title = "Select DataBase Path";
+            //if(ofd.ShowDialog() == DialogResult.OK)
+            //{
+            //    if(!File.Exists(ofd.FileName))
+            //    {
+            //        MessageBox.Show("DataBase Not Found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //        return;
+            //    }
+            //    if(DataHelper.RestoreDataBase(ofd.FileName))
+            //    {
+            //        MessageBox.Show("DataBase Restored Successfully System Will Restart", "Restored", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        Application.Restart();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Faild To Restore DataBase", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                }
-            }
+            //    }
+            //}
         }
 
         private void btnEnterAsCustomer_Click(object sender, EventArgs e)
