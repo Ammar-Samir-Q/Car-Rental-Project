@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
-
+using CarRentalDTO;
 namespace CarRental_DAL
 {
     public class clsUserData
@@ -113,6 +113,80 @@ WHERE UserID=@UserID;
 
 
         }
+
+        public async static Task<clsUsersDTO> GetUserByIDAsync(int UserID)
+        {
+            clsUsersDTO User = new clsUsersDTO();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(DataHelper.ConnectionString))
+                {
+                    await connection.OpenAsync();
+                    string Query = @"SELECT * FROM Users WHERE UserID=@UserID";
+                    using (SqlCommand command = new SqlCommand(Query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserID", UserID);
+                        using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.Read())
+                            {
+                                User.PersonID = (int)reader["PersonID"];
+                                User.Username = (string)reader["UserName"];
+                                User.Password = (string)reader["Password"];
+                                User.Role = (byte)reader["Role"];
+                                User.IsActive = (bool)reader["IsActive"];
+                                User.CreationDate = (DateTime)reader["CreationDate"];
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+               // Util.Logger.LogHelper.Log();
+            }
+
+            return User;
+        }
+
+        public async static Task<clsUsersDTO> GetUserByUsernameAndPasswordAsync(string Username,string Password)
+        {
+            clsUsersDTO User = new clsUsersDTO();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(DataHelper.ConnectionString))
+                {
+                    await connection.OpenAsync();
+                    string Query = @"SELECT * FROM Users WHERE Username=@Username AND Password=@Password";
+                    using (SqlCommand command = new SqlCommand(Query, connection))
+                    {
+                        command.Parameters.Add("@Username", SqlDbType.NVarChar, 500).Value = Username;
+                        command.Parameters.Add("@Password", SqlDbType.NVarChar, 500).Value = Password;
+
+                        using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.Read())
+                            {
+                                User.UserID= (int)reader["UserID"];
+                                User.PersonID = (int)reader["PersonID"];
+                                User.Username = Username;
+                                User.Password = Password;
+                                User.Role = (byte)reader["Role"];
+                                User.IsActive = (bool)reader["IsActive"];
+                                User.CreationDate = (DateTime)reader["CreationDate"];
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Util.Logger.LogHelper.Log();
+            }
+
+            return User;
+        }
+
 
         public static int GetUserIDByUsernameAndPassword(string UserName,string Password)
         {

@@ -48,7 +48,7 @@ namespace CarRental
             lblCreationDate.Text = DateTime.Now.ToShortDateString();
             ctrlPersonInfoWithFilter1.ResetControl();
             //Change This After Login
-            lblCreatedBy.Text = clsUsers.GetUserByID(clsGlobalSettings.UserID).Username;
+            lblCreatedBy.Text = clsUsers.GetUserByID(clsGlobalSettings.CurrentUser.UserID).Username;
             txtDriverLicnese.Text = "";
         }
       
@@ -124,7 +124,7 @@ namespace CarRental
             if(_Mode==enMode.eAddNew||_Mode==enMode.Convert)
             {
                 _Customer.CreationDate = DateTime.Now;
-                _Customer.CreatedByUserID = clsGlobalSettings.UserID;
+                _Customer.CreatedByUserID = clsGlobalSettings.CurrentUser.UserID;
             }
             _Customer.DriverLicnsesNumber = txtDriverLicnese.Text;
             

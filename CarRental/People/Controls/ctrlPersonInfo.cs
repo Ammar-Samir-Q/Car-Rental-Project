@@ -94,7 +94,7 @@ namespace CarRental
 
         private void linklblEditPerson_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (clsGlobalSettings.Role == clsUsers.enRole.Admin)
+            if (clsGlobalSettings.CurrentUser.Role == clsUsers.enRole.Admin)
             {
                 Form frm = new frmAddUpdatePerson(_PersonID);
                 frm.ShowDialog();

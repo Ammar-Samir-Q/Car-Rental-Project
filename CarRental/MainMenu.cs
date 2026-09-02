@@ -39,9 +39,9 @@ namespace CarRental
 
         private void currentUserInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (clsGlobalSettings.UserID > 0)
+            if (clsGlobalSettings.CurrentUser.UserID > 0)
             {
-                Form frm = new frmUserInfo(clsGlobalSettings.UserID);
+                Form frm = new frmUserInfo(clsGlobalSettings.CurrentUser.UserID);
                 frm.ShowDialog();
             }
         }
@@ -127,9 +127,9 @@ namespace CarRental
         }
         private void _HandelRoleMenu()
         {
-            if (clsGlobalSettings.Role != clsUsers.enRole.Customer)
+            if (clsGlobalSettings.CurrentUser.Role != clsUsers.enRole.Customer)
             {
-                clsUsers User = clsUsers.GetUserByID(clsGlobalSettings.UserID);
+                clsUsers User = clsUsers.GetUserByID(clsGlobalSettings.CurrentUser.UserID);
                 lblUsername.Text = User.Username;
                 if (User.PersonInfo.ImagePath != "")
                 {
@@ -137,7 +137,7 @@ namespace CarRental
                 }
                     
             }
-            switch (clsGlobalSettings.Role)
+            switch (clsGlobalSettings.CurrentUser.Role)
             {
                 case clsUsers.enRole.User:
                     staticsToolStripMenuItem.Enabled = false;
@@ -186,7 +186,7 @@ namespace CarRental
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new frmChangePassword(clsGlobalSettings.UserID);
+            Form frm = new frmChangePassword(clsGlobalSettings.CurrentUser.UserID);
             frm.ShowDialog();
         }
 

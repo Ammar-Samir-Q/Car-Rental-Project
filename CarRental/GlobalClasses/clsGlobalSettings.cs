@@ -14,10 +14,12 @@ namespace CarRental
         //UserID Saved Here After Login
         static string Keyname = "HKEY_LOCAL_MACHINE\\SOFTWARE\\CarRentalSystem";
 
-        public static int UserID { get; set; }
+        public static clsUsers CurrentUser;
 
-        public static clsUsers.enRole Role { get; set; }
-        
+        public clsGlobalSettings()
+        {
+            CurrentUser = new clsUsers();
+        }
 
         public static bool SaveUserInfoToReg(string Username,string Password)
         {

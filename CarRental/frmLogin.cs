@@ -118,19 +118,17 @@ namespace CarRental
                 }
         }
 
-        private void _Login()
+        private async void _Login()
         {
-
-            if (!clsUsers.IsUserExists(txtUserName.Text,txtPassword.Text))
+            clsUsers User =await clsUsers.GetUserByUsernameAndPasswordAsync(txtUserName.Text, txtPassword.Text);
+            if (User==null)
             {
                 MessageBox.Show("Wrong Username Or Password", " User Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
             _HandelSavingData();
-
-            clsGlobalSettings.UserID = clsUsers.GetUserIDByUsernameAndPassword(txtUserName.Text,txtPassword.Text);
-            clsGlobalSettings.Role=clsUsers.GetUserByID(clsGlobalSettings.UserID).Role;
+            clsGlobalSettings.CurrentUser = User;
             Form frm = new MainMenu(this);
             this.Hide();
             frm.ShowDialog();
@@ -204,11 +202,9 @@ namespace CarRental
         
 
 
-        private void btnEnterAsCustomer_Click(object sender, EventArgs e)
+        private async void btnEnterAsCustomer_Click(object sender, EventArgs e)
         {
-            
-            clsGlobalSettings.Role = clsUsers.enRole.Customer;
-            clsGlobalSettings.UserID = 3; 
+            clsGlobalSettings.CurrentUser =await clsUsers.GetUserByIDAsync(13);
             Form frm = new MainMenu();
             this.Hide();
             frm.ShowDialog();

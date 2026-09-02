@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-
+using CarRentalDTO;
 namespace CarRental_BLL
 {
     public class clsUsers
@@ -112,7 +112,29 @@ namespace CarRental_BLL
             else
                 return null;
         }
+        public async static Task<clsUsers> GetUserByIDAsync(int UserID)
+        {
+            clsUsersDTO usersDTO = new clsUsersDTO();
+            usersDTO=await clsUserData.GetUserByIDAsync(UserID);
+            if (!string.IsNullOrEmpty(usersDTO.Username))
+            {
+                return new clsUsers(usersDTO.UserID, usersDTO.PersonID, usersDTO.Username, usersDTO.Password, usersDTO.Role, usersDTO.IsActive, usersDTO.CreationDate);
+            }
+            else
+                return null;
+        }
 
+        public async static Task<clsUsers> GetUserByUsernameAndPasswordAsync(string Username,string Password)
+        {
+            clsUsersDTO usersDTO = new clsUsersDTO();
+            usersDTO = await clsUserData.GetUserByUsernameAndPasswordAsync(Username,Password);
+            if (!string.IsNullOrEmpty(usersDTO.Username))
+            {
+                return new clsUsers(usersDTO.UserID, usersDTO.PersonID, usersDTO.Username, usersDTO.Password, usersDTO.Role, usersDTO.IsActive, usersDTO.CreationDate);
+            }
+            else
+                return null;
+        }
         public static bool DeleteUser(int UserID)
         {
             return clsUserData.DeleteUser(UserID);
@@ -135,8 +157,6 @@ namespace CarRental_BLL
         public static bool IsUserExists(string UserName,string Password)
         {
             return clsUserData.IsUserExists(UserName,Password);
-
-            //return clsUserData.IsUserExists(UserName, Util.Security.SecurityHelper.HashData(Password));
         }
 
         public bool IsExists()
@@ -148,13 +168,6 @@ namespace CarRental_BLL
         public static bool IsUserExistsByPersonID(int PersonID)
         {
             return clsUserData.IsUserExistsByPersonID(PersonID);
-        }
-
-        public static int GetUserIDByUsernameAndPassword(string UserName,string Password)
-        {
-            return clsUserData.GetUserIDByUsernameAndPassword(UserName,(Password));
-
-            //return clsUserData.GetUserIDByUsernameAndPassword(UserName, Util.Security.SecurityHelper.HashData(Password));
         }
 
     }

@@ -57,6 +57,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CarRentalDTO\CarRentalDTO.csproj">
+      <Project>{98281035-5713-4411-8a3a-2c875879e80b}</Project>
+      <Name>CarRentalDTO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CarRental_DAL\CarRental_DAL.csproj">
       <Project>{495b1b96-f043-43f3-9400-8565f2192aad}</Project>
       <Name>CarRental_DAL</Name>

@@ -123,7 +123,7 @@ namespace CarRental
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (clsGlobalSettings.Role == clsUsers.enRole.Admin)
+            if (clsGlobalSettings.CurrentUser.Role == clsUsers.enRole.Admin)
             {
                 Form frm = new frmAddUpdateVehicle((int)dgvVehicles.SelectedRows[0].Cells[0].Value);
                 frm.ShowDialog();
@@ -139,7 +139,7 @@ namespace CarRental
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (clsGlobalSettings.Role == clsUsers.enRole.Admin)
+            if (clsGlobalSettings.CurrentUser.Role == clsUsers.enRole.Admin)
             {
                 if (MessageBox.Show("Vehicle Will Be Deleted Are You Sure ?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.Cancel)
                 {
