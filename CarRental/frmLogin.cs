@@ -112,10 +112,17 @@ namespace CarRental
         private void _HandelSavingData()
         {
             if (cbRememberMe.Checked)
-                if(!clsGlobalSettings.SaveUserInfoToReg(txtUserName.Text, txtPassword.Text))
+            {
+                if (!clsGlobalSettings.SaveUserInfoToReg(txtUserName.Text, txtPassword.Text))
                 {
-                    MessageBox.Show("Faild To Save Login Data","Reg Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Faild To Save Login Data", "Reg Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            else
+            {
+                clsGlobalSettings.SaveUserInfoToReg("", "");
+            }
+
         }
 
         private async void _Login()
