@@ -88,6 +88,7 @@ namespace CarRental
 
         }
 
+        [Obsolete]
         private void _SaveUserData(string Username,string Password)
         {
             try
@@ -154,7 +155,7 @@ namespace CarRental
             panel2.BackColor = Properties.Settings.Default.MainColor;
             btnClose.BackColor = panel1.BackColor;
             btnLogin.BackColor = panel2.BackColor;
-            btnRestoreDataBase.BackColor = panel1.BackColor;
+            btnDatabaseStatus.BackColor = panel1.BackColor;
             btnEnterAsCustomer.BackColor = panel2.BackColor;
 
             if (panel1.BackColor == Color.White)
@@ -164,7 +165,7 @@ namespace CarRental
                 lblVersion.ForeColor = Color.Black;
                 btnLogin.ForeColor = Color.Black;
                 btnClose.ForeColor = Color.Black;
-                btnRestoreDataBase.ForeColor = Color.Black;
+                btnDatabaseStatus.ForeColor = Color.Black;
                 btnEnterAsCustomer.ForeColor = Color.Black;
             }
 
@@ -176,7 +177,6 @@ namespace CarRental
             {
                 btnLogin.Visible = false;
                 btnEnterAsCustomer.Visible = false;
-                btnRestoreDataBase.Visible = true;
                 txtPassword.Enabled = false;
                 txtUserName.Enabled = false;
                 return;
@@ -187,7 +187,6 @@ namespace CarRental
                 txtUserName.Enabled = true;
                 btnLogin.Visible = true;
                 btnEnterAsCustomer.Visible = true;
-                btnRestoreDataBase.Visible = false;
             }
 
             _LoadUserData();
@@ -202,47 +201,18 @@ namespace CarRental
         {
             _HandelNullLogin();
         }
+        
 
-        private void btnRestoreDataBase_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Feature Is Not Implemented yet","Coming Soon",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            //OpenFileDialog ofd=new OpenFileDialog();
-            //ofd.Title = "Select DataBase Path";
-            //if(ofd.ShowDialog() == DialogResult.OK)
-            //{
-            //    if(!File.Exists(ofd.FileName))
-            //    {
-            //        MessageBox.Show("DataBase Not Found", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        return;
-            //    }
-            //    if(DataHelper.RestoreDataBase(ofd.FileName))
-            //    {
-            //        MessageBox.Show("DataBase Restored Successfully System Will Restart", "Restored", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //        Application.Restart();
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Faild To Restore DataBase", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            //    }
-            //}
-        }
 
         private void btnEnterAsCustomer_Click(object sender, EventArgs e)
         {
             
             clsGlobalSettings.Role = clsUsers.enRole.Customer;
-            clsGlobalSettings.UserID = 3;
+            clsGlobalSettings.UserID = 3; 
             Form frm = new MainMenu();
             this.Hide();
             frm.ShowDialog();
             Application.Exit();
-            //Testing----->
-            //OpenFileDialog ofd=new OpenFileDialog();
-            //if (ofd.ShowDialog() == DialogResult.OK)
-            //{
-            //    DataHelper.RestoreDataBase(ofd.FileName);
-            //}
         }
     }
 }

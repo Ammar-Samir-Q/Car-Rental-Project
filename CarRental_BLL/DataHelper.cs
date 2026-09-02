@@ -14,10 +14,6 @@ namespace CarRental_BLL
             return CarRental_DAL.DataHelper.CheckConnection();
         }
 
-        public static bool RestoreDataBase(string Path)
-        {
-            return CarRental_DAL.DataHelper.RestoreDataBase(Path);
-        }
 
         public static bool BackupDatabase(string Path)
         {

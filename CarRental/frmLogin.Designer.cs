@@ -45,7 +45,7 @@
             this.lblVersion = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnRestoreDataBase = new System.Windows.Forms.Button();
+            this.btnDatabaseStatus = new System.Windows.Forms.Button();
             this.btnEnterAsCustomer = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -168,15 +168,14 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
             // 
-            // btnRestoreDataBase
+            // btnDatabaseStatus
             // 
-            resources.ApplyResources(this.btnRestoreDataBase, "btnRestoreDataBase");
-            this.btnRestoreDataBase.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnRestoreDataBase.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnRestoreDataBase.ForeColor = System.Drawing.Color.White;
-            this.btnRestoreDataBase.Name = "btnRestoreDataBase";
-            this.btnRestoreDataBase.UseVisualStyleBackColor = false;
-            this.btnRestoreDataBase.Click += new System.EventHandler(this.btnRestoreDataBase_Click);
+            resources.ApplyResources(this.btnDatabaseStatus, "btnDatabaseStatus");
+            this.btnDatabaseStatus.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnDatabaseStatus.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnDatabaseStatus.ForeColor = System.Drawing.Color.White;
+            this.btnDatabaseStatus.Name = "btnDatabaseStatus";
+            this.btnDatabaseStatus.UseVisualStyleBackColor = false;
             // 
             // btnEnterAsCustomer
             // 
@@ -227,7 +226,7 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnRestoreDataBase);
+            this.Controls.Add(this.btnDatabaseStatus);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmLogin";
@@ -266,7 +265,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnRestoreDataBase;
+        private System.Windows.Forms.Button btnDatabaseStatus;
         private System.Windows.Forms.Button btnEnterAsCustomer;
     }
 }

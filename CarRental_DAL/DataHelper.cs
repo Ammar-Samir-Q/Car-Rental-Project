@@ -35,33 +35,10 @@ namespace CarRental_DAL
 
         }
 
-        static public bool RestoreDataBase(string Path)
-        {
-            SqlConnection connection = new SqlConnection(MasterConnection);
-            string Query = @"RESTORE DataBase CarRental FROM DISK =@Path";
-            SqlCommand command= new SqlCommand(Query, connection);
-            command.Parameters.AddWithValue("@Path", Path);
-            try 
-            {
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                connection.Close ();
-                return false;
-            }
-
-
-
-
-        }
 
         static public bool BackupDatabase(string Path)
         {
-            Path += "\\CarRental.bak";
+            Path += $"\\[{DateTime.Now:yyyy-MM-dd-hh-mm}]--CarRentalBackup--.bak";
             SqlConnection connection = new SqlConnection(ConnectionString);
             string Query = @"Backup DataBase CarRental To DISK =@Path";
             SqlCommand command = new SqlCommand(Query, connection);
