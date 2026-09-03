@@ -127,13 +127,6 @@ namespace CarRental
 
         //--------------------------------------Save---------------------------------------------
 
-        private string ConvertPathToGUID(string ImagePath)
-        {
-            Guid guid = Guid.NewGuid();
-            FileInfo info = new FileInfo(ImagePath);
-            string ext = info.Extension;
-            return guid.ToString() + ext;
-        }
 
         private bool _HandelImage()
         {
@@ -253,8 +246,9 @@ namespace CarRental
         {
             OpenFileDialog ofd=new OpenFileDialog();
             ofd.Title = "Choose Person Image";
+            ofd.Filter = "Image Files | *.jpg;*.png;*.jpeg";
 
-            if(ofd.ShowDialog() == DialogResult.OK)
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
                 if(!string.IsNullOrEmpty(ofd.FileName))
                 {

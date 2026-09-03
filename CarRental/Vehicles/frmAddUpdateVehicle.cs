@@ -139,50 +139,56 @@ namespace CarRental
 
         private bool _HandelImage()
         {
-            if (string.IsNullOrEmpty(pbVehicleImage.ImageLocation))
+            if (pbVehicleImage.ImageLocation == _Vehicle.ImagePath)
                 return true;
 
-            if(pbVehicleImage.ImageLocation==_Vehicle.ImagePath)
+
+            //Case 1 If Picture Is Removed And The Path On The Database Exists = Delete Image And Change ImagePath In DB To Null
+            if (string.IsNullOrEmpty(pbVehicleImage.ImageLocation) && !string.IsNullOrEmpty(_Vehicle.ImagePath))
             {
+                if (!Util.ImageHelper.DeleteImage(_Vehicle.ImagePath, Application.StartupPath))
+                {
+                    MessageBox.Show("Failed To Delete Image", "Image Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                _Vehicle.ImagePath = null;
                 return true;
             }
-            else
+
+            //Case 2 : If Picture Is Exists And Not Yet Saved To Database= SaveImage And Return Relative Path To Imagepath  
+            if (string.IsNullOrEmpty(_Vehicle.ImagePath) && !string.IsNullOrEmpty(pbVehicleImage.ImageLocation))
             {
-                if(File.Exists(_Vehicle.ImagePath))
+                string ReleativePath = Util.ImageHelper.SaveImage(pbVehicleImage.ImageLocation, Application.StartupPath, "People");
+                if (string.IsNullOrEmpty(ReleativePath))
                 {
-                    try
-                    {
-                        File.Delete(_Vehicle.ImagePath);
-                    }
-                    catch 
-                    {
-                        return false;
-                    }
-
+                    MessageBox.Show("Error While Saving Image To Folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
                 }
+                _Vehicle.ImagePath = ReleativePath;
+                pbVehicleImage.ImageLocation = _Vehicle.ImagePath;
+                return true;
+            }
 
-                string DestnitionFolder = AppDomain.CurrentDomain.BaseDirectory;
-                if(!Directory.Exists(DestnitionFolder))
+            //Case 3 : if picture on the imagelocation is diffrent from the picture on the imagepath = update picture on database (delete old and save new
+
+            if (pbVehicleImage.ImageLocation != _Vehicle.ImagePath)
+            {
+                if (!Util.ImageHelper.DeleteImage(_Vehicle.ImagePath, Application.StartupPath))
                 {
-                    Directory.CreateDirectory(DestnitionFolder);
+                    MessageBox.Show($"Faild To Delete Image In Location : {_Vehicle.ImagePath}", "Image Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
-                Guid guid = Guid.NewGuid();
-                FileInfo info = new FileInfo(pbVehicleImage.ImageLocation);
-                string Ext=info.Extension;
-                string DestnitionPath = DestnitionFolder + guid.ToString() + Ext;
-
-                File.Copy(pbVehicleImage.ImageLocation,DestnitionPath,true);
-                pbVehicleImage.ImageLocation = DestnitionPath;
-                _Vehicle.ImagePath = DestnitionPath;
+                string ReleativePath = Util.ImageHelper.SaveImage(pbVehicleImage.ImageLocation, Application.StartupPath, "Vehicles");
+                if (string.IsNullOrEmpty(ReleativePath))
+                {
+                    MessageBox.Show("Error While Saving Image To Folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                _Vehicle.ImagePath = ReleativePath;
+                pbVehicleImage.ImageLocation = _Vehicle.ImagePath;
                 return true;
 
             }
 
-
-
-
-
+            return false;
         }
         private void _Save()
         {
@@ -244,7 +250,8 @@ namespace CarRental
         {
             OpenFileDialog ofd=new OpenFileDialog();
             ofd.Title = "Choose Vehicle Image";
-            
+            ofd.Filter = "Image Files | *.jpg;*.png;*.jpeg";
+
             if(ofd.ShowDialog() == DialogResult.OK)
             {
                 pbVehicleImage.ImageLocation = ofd.FileName;
@@ -260,21 +267,9 @@ namespace CarRental
 
         private void _RemoveImage()
         {
-            if(!string.IsNullOrEmpty(_Vehicle.ImagePath))
-            {
-
-                if(File.Exists(_Vehicle.ImagePath))
-                {
-                    File.Delete(_Vehicle.ImagePath);
-                   
-                }
-                pbVehicleImage.ImageLocation = "";
-                _Vehicle.ImagePath = "";
-            }
+            pbVehicleImage.ImageLocation = "";
             pbVehicleImage.Image= Properties.Resources.png_DefaultCar;
             btnRemoveImage.Visible = false;
-
-
         }
 
         private void btnSetImage_Click(object sender, EventArgs e)
