@@ -115,10 +115,10 @@ namespace CarRental
 
                 if(DataHelper.BackupDatabase(fbd.SelectedPath))
                 {
-                    MessageBox.Show("DataBase Backup Done Successfully", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("DataBase Backup Created Successfully", "Backup Created", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                MessageBox.Show("Faild To Backup Database", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Faild To Backup Database (Cannot Access This Folder)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
 

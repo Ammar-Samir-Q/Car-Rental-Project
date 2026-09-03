@@ -164,12 +164,6 @@
   <data name="btnSelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 42</value>
   </data>
-  <data name="dgvAvailableVehicles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1084, 297</value>
-  </data>
-  <data name="&gt;&gt;btnSelect.Name" xml:space="preserve">
-    <value>btnSelect</value>
-  </data>
   <data name="buttonbtnClose1.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 42</value>
   </data>
@@ -179,11 +173,9 @@
   <data name="&gt;&gt;ctrlVehicleInfo1.Name" xml:space="preserve">
     <value>ctrlVehicleInfo1</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btnSelect.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="ctrlVehicleInfo1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -212,12 +204,8 @@
   <data name="dgvAvailableVehicles.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 345</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="selectToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
+  <data name="btnSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;selectToolStripMenuItem.Name" xml:space="preserve">
     <value>selectToolStripMenuItem</value>
@@ -228,20 +216,26 @@
   <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dgvAvailableVehicles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1084, 297</value>
   </data>
   <data name="btnSelect.Text" xml:space="preserve">
     <value>Select</value>
   </data>
-  <data name="buttonbtnClose1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="buttonbtnClose1.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="&gt;&gt;ctrlVehicleInfo1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
+  <data name="&gt;&gt;btnSelect.Name" xml:space="preserve">
+    <value>btnSelect</value>
   </data>
   <data name="btnSelect.Location" type="System.Drawing.Point, System.Drawing">
     <value>824, 648</value>
@@ -258,14 +252,17 @@
   <data name="&gt;&gt;dgvAvailableVehicles.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonbtnClose1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="selectToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmSelectVehicle</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Select Vehicle</value>
@@ -279,17 +276,20 @@
   <data name="&gt;&gt;dgvAvailableVehicles.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmSelectVehicle</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
-  <data name="selectToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
+  <data name="&gt;&gt;buttonbtnClose1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonbtnClose1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="selectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 38</value>
   </data>
-  <data name="buttonbtnClose1.Text" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="selectToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

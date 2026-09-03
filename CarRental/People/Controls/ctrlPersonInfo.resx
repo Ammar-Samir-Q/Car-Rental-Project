@@ -127,6 +127,9 @@
   <data name="lblAge.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
   </data>
@@ -139,16 +142,22 @@
   <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
   </data>
   <data name="pictureBox8.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
+  <data name="lblDateOfBirth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
   <data name="&gt;&gt;lblAge.Name" xml:space="preserve">
     <value>lblAge</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>533, 97</value>
   </data>
@@ -166,9 +175,6 @@
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>18</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>24</value>
   </data>
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
@@ -209,10 +215,10 @@
   <data name="lblFullname.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="lblEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="lblGender.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="lblGender.AutoSize" type="System.Boolean, mscorlib">
@@ -251,8 +257,8 @@
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 180</value>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 180</value>
@@ -260,20 +266,11 @@
   <data name="label13.Text" xml:space="preserve">
     <value>Email :</value>
   </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
   </data>
-  <data name="lblNationalNo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 32</value>
-  </data>
-  <data name="&gt;&gt;lblGender.Name" xml:space="preserve">
-    <value>lblGender</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>967, 395</value>
@@ -291,8 +288,14 @@
   <data name="linklblEditPerson.Text" xml:space="preserve">
     <value>Edit Person </value>
   </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="&gt;&gt;pictureBox9.Name" xml:space="preserve">
     <value>pictureBox9</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
   </data>
   <data name="lblID.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 24</value>
@@ -302,6 +305,12 @@
   </data>
   <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 24</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblGender.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -336,11 +345,11 @@
   <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
-    <value>gbPersonInfo</value>
-  </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 231</value>
+  </data>
+  <data name="&gt;&gt;lblFullname.Name" xml:space="preserve">
+    <value>lblFullname</value>
   </data>
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -354,8 +363,8 @@
   <data name="&gt;&gt;lblEmail.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 128</value>
+  <data name="lblID.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -423,17 +432,17 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 24</value>
   </data>
-  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 180</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblGender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblID.Text" xml:space="preserve">
     <value>[???]</value>
@@ -456,9 +465,6 @@
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;linklblEditPerson.Name" xml:space="preserve">
-    <value>linklblEditPerson</value>
-  </data>
   <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 24</value>
   </data>
@@ -474,14 +480,11 @@
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>gbPersonInfo</value>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 89</value>
   </data>
   <data name="&gt;&gt;pictureBox9.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -492,11 +495,17 @@
   <data name="&gt;&gt;lblFullname.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
   </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>gbPersonInfo</value>
+  </data>
   <data name="&gt;&gt;linklblEditPerson.Type" xml:space="preserve">
     <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 32</value>
+  </data>
+  <data name="&gt;&gt;lblAge.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
@@ -513,17 +522,14 @@
   <data name="&gt;&gt;pictureBox6.Name" xml:space="preserve">
     <value>pictureBox6</value>
   </data>
-  <data name="&gt;&gt;lblPhone.Name" xml:space="preserve">
-    <value>lblPhone</value>
-  </data>
   <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>686, 51</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="lblEmail.Text" xml:space="preserve">
-    <value>[???]</value>
+  <data name="&gt;&gt;lblNationalNo.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="pbPersonImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -540,14 +546,14 @@
   <data name="lblAge.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 136</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>gbPersonInfo</value>
-  </data>
   <data name="&gt;&gt;lblAddress.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -558,17 +564,11 @@
   <data name="pictureBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 231</value>
   </data>
-  <data name="&gt;&gt;pbPersonImage.Name" xml:space="preserve">
-    <value>pbPersonImage</value>
-  </data>
-  <data name="lblAddress.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>[???]</value>
   </data>
   <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 32</value>
@@ -594,29 +594,29 @@
   <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
   </data>
-  <data name="&gt;&gt;lblNationalNo.Parent" xml:space="preserve">
-    <value>gbPersonInfo</value>
-  </data>
   <data name="lblDateOfBirth.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>Phone :</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
   </data>
   <data name="&gt;&gt;label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
+  <data name="&gt;&gt;lblAge.Parent" xml:space="preserve">
+    <value>gbPersonInfo</value>
   </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
   <data name="linklblEditPerson.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="&gt;&gt;lblEmail.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
@@ -627,26 +627,20 @@
   <data name="&gt;&gt;pictureBox9.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;lblEmail.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 24</value>
   </data>
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 32</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 24</value>
-  </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 335</value>
+  <data name="&gt;&gt;lblPhone.Name" xml:space="preserve">
+    <value>lblPhone</value>
   </data>
-  <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;lblFullname.ZOrder" xml:space="preserve">
     <value>21</value>
@@ -657,8 +651,8 @@
   <data name="lblNationalNo.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 24</value>
   </data>
   <data name="&gt;&gt;lblPhone.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
@@ -675,8 +669,8 @@
   <data name="lblGender.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 24</value>
   </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 89</value>
+  <data name="&gt;&gt;lblNationalNo.Parent" xml:space="preserve">
+    <value>gbPersonInfo</value>
   </data>
   <data name="lblGender.Text" xml:space="preserve">
     <value>[???]</value>
@@ -684,8 +678,8 @@
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblDateOfBirth.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 231</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>ID :</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>12</value>
@@ -699,8 +693,8 @@
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 24</value>
   </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblEmail.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="lblPhone.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 24</value>
@@ -714,8 +708,8 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblNationalNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 24</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 136</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -728,6 +722,9 @@
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblNationalNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 24</value>
@@ -750,8 +747,8 @@
   <data name="lblPhone.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblID.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;lblGender.Name" xml:space="preserve">
+    <value>lblGender</value>
   </data>
   <data name="lblAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 24</value>
@@ -765,8 +762,8 @@
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
   </data>
-  <data name="&gt;&gt;lblAge.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>gbPersonInfo</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>19</value>
@@ -774,8 +771,8 @@
   <data name="&gt;&gt;lblAddress.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
-    <value>pictureBox3</value>
+  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 335</value>
   </data>
   <data name="&gt;&gt;lblGender.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
@@ -801,8 +798,8 @@
   <data name="&gt;&gt;pictureBox9.Parent" xml:space="preserve">
     <value>gbPersonInfo</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 24</value>
+  <data name="lblAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -810,8 +807,8 @@
   <data name="lblAge.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>gbPersonInfo</value>
   </data>
   <data name="lblAge.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 280</value>
@@ -825,8 +822,8 @@
   <data name="lblPhone.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="lblID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 128</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Fullname :</value>
@@ -843,8 +840,8 @@
   <data name="pbPersonImage.Location" type="System.Drawing.Point, System.Drawing">
     <value>741, 147</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 24</value>
+  <data name="&gt;&gt;pbPersonImage.Name" xml:space="preserve">
+    <value>pbPersonImage</value>
   </data>
   <data name="&gt;&gt;label10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -852,8 +849,8 @@
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>ID :</value>
+  <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;lblID.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -870,8 +867,8 @@
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="&gt;&gt;lblAge.Parent" xml:space="preserve">
-    <value>gbPersonInfo</value>
+  <data name="lblAddress.Text" xml:space="preserve">
+    <value>[???]</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -879,14 +876,14 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="&gt;&gt;lblNationalNo.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblAddress.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>National No :</value>
@@ -903,11 +900,14 @@
   <data name="&gt;&gt;lblNationalNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblAddress.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pbPersonImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 212</value>
   </data>
   <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
     <value>pictureBox4</value>
@@ -924,17 +924,17 @@
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblAddress.Text" xml:space="preserve">
-    <value>[???]</value>
+  <data name="lblNationalNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="pbPersonImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 212</value>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
   </data>
-  <data name="lblDateOfBirth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 24</value>
+  <data name="lblDateOfBirth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 231</value>
   </data>
   <data name="&gt;&gt;pictureBox8.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -948,8 +948,8 @@
   <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
-  <data name="&gt;&gt;lblGender.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblGender.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="&gt;&gt;gbPersonInfo.Name" xml:space="preserve">
     <value>gbPersonInfo</value>
@@ -960,11 +960,11 @@
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;lblFullname.Name" xml:space="preserve">
-    <value>lblFullname</value>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
   </data>
-  <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;linklblEditPerson.Name" xml:space="preserve">
+    <value>linklblEditPerson</value>
   </data>
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 32</value>
@@ -973,6 +973,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
+    <value>en</value>
   </metadata>
 </root>

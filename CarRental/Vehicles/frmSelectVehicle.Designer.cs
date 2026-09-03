@@ -35,8 +35,8 @@
             this.btnSelect = new System.Windows.Forms.Button();
             this.dgvAvailableVehicles = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ctrlVehicleInfo1 = new CarRental.ctrlVehicleInfo();
             this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctrlVehicleInfo1 = new CarRental.ctrlVehicleInfo();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableVehicles)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -82,17 +82,17 @@
             this.selectToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             // 
-            // ctrlVehicleInfo1
-            // 
-            resources.ApplyResources(this.ctrlVehicleInfo1, "ctrlVehicleInfo1");
-            this.ctrlVehicleInfo1.Name = "ctrlVehicleInfo1";
-            // 
             // selectToolStripMenuItem
             // 
             resources.ApplyResources(this.selectToolStripMenuItem, "selectToolStripMenuItem");
             this.selectToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_Arrow;
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
             this.selectToolStripMenuItem.Click += new System.EventHandler(this.selectToolStripMenuItem_Click);
+            // 
+            // ctrlVehicleInfo1
+            // 
+            resources.ApplyResources(this.ctrlVehicleInfo1, "ctrlVehicleInfo1");
+            this.ctrlVehicleInfo1.Name = "ctrlVehicleInfo1";
             // 
             // frmSelectVehicle
             // 
