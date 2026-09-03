@@ -14,8 +14,8 @@ namespace CarRental
 {
     public partial class frmAddUpdatePerson : Form
     {
-        enum enMode { Addnew=1,Update=2}
-       private enMode _Mode;
+        enum enMode { Addnew = 1, Update = 2 }
+        private enMode _Mode;
 
 
         private int _PersonID;
@@ -27,13 +27,13 @@ namespace CarRental
         public frmAddUpdatePerson(int PersonID)
         {
             InitializeComponent();
-            _PersonID= PersonID;
+            _PersonID = PersonID;
             _Mode = enMode.Update;
         }
         public frmAddUpdatePerson()
         {
             InitializeComponent();
-            _Mode= enMode.Addnew;
+            _Mode = enMode.Addnew;
         }
 
         //--------------------------------------Load---------------------------------------------
@@ -58,7 +58,7 @@ namespace CarRental
             rbMale.Checked = true;
             pbImage.Image = Properties.Resources.png_Male;
         }
-    
+
         void _LoadData()
         {
             if (Properties.Settings.Default.Language == "en")
@@ -72,22 +72,22 @@ namespace CarRental
                 this.Text = lblTitle.Text;
             }
 
-            _Person=clsPeople.GetPerson(_PersonID);
-            if(_Person==null )
+            _Person = clsPeople.GetPerson(_PersonID);
+            if (_Person == null)
             {
                 MessageBox.Show("Error : Perosn Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
                 return;
             }
             lblPersonID.Text = _Person.PersonID.ToString();
-            txtFirstName.Text=_Person.FirstName;
-            txtSecondName.Text=_Person.SecondName;
-            txtThirdName.Text=_Person.ThirdName;
+            txtFirstName.Text = _Person.FirstName;
+            txtSecondName.Text = _Person.SecondName;
+            txtThirdName.Text = _Person.ThirdName;
             txtLastName.Text = _Person.LastName;
-            txtEmail.Text=_Person.Email;
-            txtPhone.Text=_Person.Phone;
-            txtAddress.Text=_Person.Address;
-            txtNationalNo.Text=_Person.NationalNo;
+            txtEmail.Text = _Person.Email;
+            txtPhone.Text = _Person.Phone;
+            txtAddress.Text = _Person.Address;
+            txtNationalNo.Text = _Person.NationalNo;
             rbMale.Checked = _Person.Gender == 0;
             rbFemale.Checked = _Person.Gender == 1;
             dtpDateOfBirth.Value = _Person.DateOfBirth;
@@ -95,10 +95,10 @@ namespace CarRental
             _LoadImage();
 
         }
-    
+
         void _LoadImage()
         {
-            if(!string.IsNullOrEmpty(_Person.ImagePath))
+            if (!string.IsNullOrEmpty(_Person.ImagePath))
             {
                 pbImage.ImageLocation = _Person.ImagePath;
                 btnRemoveImage.Visible = true;
@@ -110,14 +110,14 @@ namespace CarRental
             if (rbMale.Checked)
                 pbImage.Image = Properties.Resources.png_Male;
             else
-                pbImage.Image= Properties.Resources.png_Female;   
+                pbImage.Image = Properties.Resources.png_Female;
 
         }
 
         private void frmAddUpdatePerson_Load(object sender, EventArgs e)
         {
             _SetDefaults();
-            if(_Mode==enMode.Update)
+            if (_Mode == enMode.Update)
                 _LoadData();
         }
 
@@ -129,61 +129,65 @@ namespace CarRental
 
         private string ConvertPathToGUID(string ImagePath)
         {
-            Guid guid= Guid.NewGuid();
-           FileInfo info=new FileInfo(ImagePath);
-           string ext=info.Extension;   
+            Guid guid = Guid.NewGuid();
+            FileInfo info = new FileInfo(ImagePath);
+            string ext = info.Extension;
             return guid.ToString() + ext;
         }
 
         private bool _HandelImage()
         {
-            
+            if (pbImage.ImageLocation == _Person.ImagePath)
+                return true;
 
-            if(_Person.ImagePath!=pbImage.ImageLocation)
+
+            //Case 1 If Picture Is Removed And The Path On The Database Exists = Delete Image And Change ImagePath In DB To Null
+            if (string.IsNullOrEmpty(pbImage.ImageLocation)&&!string.IsNullOrEmpty(_Person.ImagePath))
             {
-                if(File.Exists(_Person.ImagePath))
+                if (!Util.ImageHelper.DeleteImage(_Person.ImagePath, Application.StartupPath))
                 {
-                    try
+                    MessageBox.Show("Failed To Delete Image", "Image Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                _Person.ImagePath = null;
+                return true;
+            }
+            
+            //Case 2 : If Picture Is Exists And Not Yet Saved To Database= SaveImage And Return Relative Path To Imagepath  
+            if(string.IsNullOrEmpty(_Person.ImagePath)&&!string.IsNullOrEmpty(pbImage.ImageLocation))
+            {
+                string ReleativePath = Util.ImageHelper.SaveImage(pbImage.ImageLocation,Application.StartupPath,"People");
+                if(string.IsNullOrEmpty(ReleativePath))
+                {
+                    MessageBox.Show("Error While Saving Image To Folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                _Person.ImagePath = ReleativePath;
+                pbImage.ImageLocation = _Person.ImagePath;
+                return true;
+            }
+
+            //Case 3 : if picture on the imagelocation is diffrent from the picture on the imagepath = update picture on database (delete old and save new
+
+            if(pbImage.ImageLocation!=_Person.ImagePath)
+            {
+                if(Util.ImageHelper.DeleteImage(_Person.ImagePath,Application.StartupPath))
+                {
+                    string ReleativePath = Util.ImageHelper.SaveImage(pbImage.ImageLocation, Application.StartupPath, "People");
+                    if (string.IsNullOrEmpty(ReleativePath))
                     {
-                        File.Delete(_Person.ImagePath);
-                    }
-                    catch(IOException ex) 
-                    {
-                    MessageBox.Show(ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        MessageBox.Show("Error While Saving Image To Folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return false;
                     }
-                }
-                _Person.ImagePath = pbImage.ImageLocation;
-            }
+                    _Person.ImagePath = ReleativePath;
+                    pbImage.ImageLocation = _Person.ImagePath;
+                    return true;
 
-            if (string.IsNullOrEmpty(_Person.ImagePath))
-                return true;
-
-
-            if (File.Exists(_Person.ImagePath))
-            {
-                string DestinationFolder = AppDomain.CurrentDomain.BaseDirectory;
-                if (!File.Exists(DestinationFolder))
-                {
-                    Directory.CreateDirectory(DestinationFolder);
                 }
 
-                string DestinationPath = DestinationFolder+ConvertPathToGUID(_Person.ImagePath);
-
-                File.Copy(_Person.ImagePath, DestinationPath, true);
-                _Person.ImagePath = DestinationPath;
-   
-                return true;
-            }
-            else
-            {
-                MessageBox.Show("Error : Image With Path :" + _Person.ImagePath + " Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
             }
 
 
-
-
+            return false;   
 
         }
         private void _SaveData()
@@ -269,24 +273,11 @@ namespace CarRental
 
         private void _RemoveImage()
         {
-            if (_Mode==enMode.Update)
-            {
-                if (File.Exists(_Person.ImagePath))
-                {
-                    try
-                    {
-                        File.Delete(_Person.ImagePath);
-                    }
-                    catch (IOException ex)
-                    {
-                        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    
-                }
-            }
             pbImage.ImageLocation = "";
-            _Person.ImagePath = "";
-            _LoadImage();
+            if (rbMale.Checked)
+                pbImage.Image = Properties.Resources.png_Male;
+            else
+                pbImage.Image = Properties.Resources.png_Female;
         }
 
         private void btnChooseImage_Click(object sender, EventArgs e)
