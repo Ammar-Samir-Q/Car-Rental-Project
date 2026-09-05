@@ -118,24 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="addRentToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 56</value>
-  </data>
-  <data name="addRentToolStripMenuItem.Text" xml:space="preserve">
-    <value>اضافة ايجار</value>
-  </data>
-  <data name="returnToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 56</value>
-  </data>
-  <data name="returnToolStripMenuItem.Text" xml:space="preserve">
-    <value>ارجاع تأجير</value>
-  </data>
-  <data name="manageRentsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 56</value>
-  </data>
-  <data name="manageRentsToolStripMenuItem.Text" xml:space="preserve">
-    <value>اداراة الحجوزات</value>
-  </data>
   <data name="ايجارToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 68</value>
   </data>
@@ -148,48 +130,11 @@
   <data name="transactionsToolStripMenuItem.Text" xml:space="preserve">
     <value>العمليات</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="showVehiclesToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="showVehiclesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 56</value>
-  </data>
-  <data name="showVehiclesToolStripMenuItem.Text" xml:space="preserve">
-    <value>عرض المركبات</value>
-  </data>
-  <data name="manageVehiclesToolStripMenuItem.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="manageVehiclesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 56</value>
-  </data>
-  <data name="manageVehiclesToolStripMenuItem.Text" xml:space="preserve">
-    <value>اداره المركبات</value>
-  </data>
   <data name="VehiclesToolMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 68</value>
   </data>
   <data name="VehiclesToolMenuStrip.Text" xml:space="preserve">
     <value>المركبات</value>
-  </data>
-  <data name="customersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 50</value>
-  </data>
-  <data name="customersToolStripMenuItem.Text" xml:space="preserve">
-    <value>العملاء</value>
-  </data>
-  <data name="usersToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 50</value>
-  </data>
-  <data name="usersToolStripMenuItem1.Text" xml:space="preserve">
-    <value>المستخدمين</value>
-  </data>
-  <data name="allPeopleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 50</value>
-  </data>
-  <data name="allPeopleToolStripMenuItem.Text" xml:space="preserve">
-    <value>الكل</value>
   </data>
   <data name="PeopleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 68</value>
@@ -209,36 +154,6 @@
   <data name="staticsToolStripMenuItem.Text" xml:space="preserve">
     <value>التقارير</value>
   </data>
-  <data name="currentUserInfoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>394, 56</value>
-  </data>
-  <data name="currentUserInfoToolStripMenuItem.Text" xml:space="preserve">
-    <value>معلومات المستخدم</value>
-  </data>
-  <data name="changePasswordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>394, 56</value>
-  </data>
-  <data name="changePasswordToolStripMenuItem.Text" xml:space="preserve">
-    <value>تغيير كلمة المرور</value>
-  </data>
-  <data name="accountSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 70</value>
-  </data>
-  <data name="accountSettingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>الحساب</value>
-  </data>
-  <data name="systemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 70</value>
-  </data>
-  <data name="systemToolStripMenuItem.Text" xml:space="preserve">
-    <value>النظام</value>
-  </data>
-  <data name="signOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 70</value>
-  </data>
-  <data name="signOutToolStripMenuItem.Text" xml:space="preserve">
-    <value>تسجيل خروج</value>
-  </data>
   <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>205, 68</value>
   </data>
@@ -254,29 +169,108 @@
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1904, 72</value>
   </data>
+  <data name="addRentToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 56</value>
+  </data>
+  <data name="addRentToolStripMenuItem.Text" xml:space="preserve">
+    <value>اضافة ايجار</value>
+  </data>
+  <data name="returnToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 56</value>
+  </data>
+  <data name="returnToolStripMenuItem.Text" xml:space="preserve">
+    <value>ارجاع تأجير</value>
+  </data>
+  <data name="manageRentsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 56</value>
+  </data>
+  <data name="manageRentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>اداراة الحجوزات</value>
+  </data>
+  <data name="showVehiclesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 56</value>
+  </data>
+  <data name="showVehiclesToolStripMenuItem.Text" xml:space="preserve">
+    <value>عرض المركبات</value>
+  </data>
+  <data name="manageVehiclesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 56</value>
+  </data>
+  <data name="manageVehiclesToolStripMenuItem.Text" xml:space="preserve">
+    <value>اداره المركبات</value>
+  </data>
+  <data name="customersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 50</value>
+  </data>
+  <data name="customersToolStripMenuItem.Text" xml:space="preserve">
+    <value>العملاء</value>
+  </data>
+  <data name="usersToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 50</value>
+  </data>
+  <data name="usersToolStripMenuItem1.Text" xml:space="preserve">
+    <value>المستخدمين</value>
+  </data>
+  <data name="allPeopleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 50</value>
+  </data>
+  <data name="allPeopleToolStripMenuItem.Text" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+  <data name="accountSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 70</value>
+  </data>
+  <data name="accountSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>الحساب</value>
+  </data>
+  <data name="currentUserInfoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 56</value>
+  </data>
+  <data name="currentUserInfoToolStripMenuItem.Text" xml:space="preserve">
+    <value>معلومات المستخدم</value>
+  </data>
+  <data name="changePasswordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 56</value>
+  </data>
+  <data name="changePasswordToolStripMenuItem.Text" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="systemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 70</value>
+  </data>
+  <data name="systemToolStripMenuItem.Text" xml:space="preserve">
+    <value>النظام</value>
+  </data>
+  <data name="signOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 70</value>
+  </data>
+  <data name="signOutToolStripMenuItem.Text" xml:space="preserve">
+    <value>تسجيل خروج</value>
+  </data>
   <data name="lblUsernameTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblUsernameTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblUsernameTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1735, 89</value>
+    <value>1687, 80</value>
   </data>
   <data name="lblUsernameTitle.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="lblUsernameTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 29</value>
+    <value>92, 29</value>
   </data>
   <data name="lblUsernameTitle.Text" xml:space="preserve">
-    <value> المستخدم :</value>
+    <value> المستخدم </value>
   </data>
   <data name="lblUsername.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblUsername.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1665, 89</value>
+    <value>1704, 122</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblTitle.AutoSize" type="System.Boolean, mscorlib">
@@ -303,11 +297,11 @@
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>819, 397</value>
   </data>
-  <data name="lblTotalVehicles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 44</value>
-  </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1612, 627</value>
+  </data>
+  <data name="lblTotalVehicles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 44</value>
   </data>
   <data name="lblTitleTotalVehicles.Location" type="System.Drawing.Point, System.Drawing">
     <value>1624, 566</value>
@@ -324,11 +318,11 @@
   <data name="lblTitleTotalCustomers.Text" xml:space="preserve">
     <value>عدد العملاء</value>
   </data>
-  <data name="lblTotalCustomers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 44</value>
-  </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 627</value>
+  </data>
+  <data name="lblTotalCustomers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 44</value>
   </data>
   <data name="lblTitleTotalRents.Location" type="System.Drawing.Point, System.Drawing">
     <value>1612, 299</value>
@@ -339,14 +333,14 @@
   <data name="lblTitleTotalRents.Text" xml:space="preserve">
     <value>اجمالي الايجارات</value>
   </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1612, 361</value>
+  </data>
   <data name="lblTotalRents.Location" type="System.Drawing.Point, System.Drawing">
     <value>88, 45</value>
   </data>
   <data name="lblTotalRents.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 58</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1612, 361</value>
   </data>
   <data name="lblTitleTotalBookings.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 306</value>
@@ -354,11 +348,11 @@
   <data name="lblTitleTotalBookings.Text" xml:space="preserve">
     <value>اجمالي الحجوزات</value>
   </data>
-  <data name="lblTotalBookings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 47</value>
-  </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 368</value>
+  </data>
+  <data name="lblTotalBookings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 47</value>
   </data>
   <data name="lblRole.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -376,7 +370,7 @@
     <value>NoControl</value>
   </data>
   <data name="pbUserImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1839, 89</value>
+    <value>1770, 80</value>
   </data>
   <data name="pbUserImage.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 38</value>

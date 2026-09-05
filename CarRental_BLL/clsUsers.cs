@@ -127,7 +127,7 @@ namespace CarRental_BLL
         public async static Task<clsUsers> GetUserByUsernameAndPasswordAsync(string Username,string Password)
         {
             clsUsersDTO usersDTO = new clsUsersDTO();
-            usersDTO = await clsUserData.GetUserByUsernameAndPasswordAsync(Username,Password);
+            usersDTO = await clsUserData.GetUserByUsernameAndPasswordAsync(Username,Util.Security.SecurityHelper.HashData(Password));
             if (!string.IsNullOrEmpty(usersDTO.Username))
             {
                 return new clsUsers(usersDTO.UserID, usersDTO.PersonID, usersDTO.Username, usersDTO.Password, usersDTO.Role, usersDTO.IsActive, usersDTO.CreationDate);
