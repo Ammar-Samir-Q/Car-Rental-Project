@@ -234,29 +234,35 @@ WHERE PersonID=@PersonID;";
             return IsDeleted;
         }
 
-        public static DataTable GetAllPeople()
+        public async static Task<DataTable> GetAllPeople()
         {
             DataTable dataTable = new DataTable();
-            SqlConnection connection = new SqlConnection(DataHelper.ConnectionString);
-            string Query = @"SELECT * FROM People_View";
-            SqlCommand command = new SqlCommand(Query, connection);
             try
             {
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                if (reader.HasRows)
+                using (SqlConnection connection = new SqlConnection(DataHelper.ConnectionString))
                 {
-                    dataTable.Load(reader);
-                }
-                reader.Close();
+                    await connection.OpenAsync();
+                    string Query = @"SELECT * FROM People_View";
+                    using (SqlCommand command = new SqlCommand(Query, connection))
+                    {
+                        using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.HasRows)
+                            {
+                                dataTable.Load(reader);
+                            }
+                        }
 
+                    }
+
+                }
             }
-            catch (Exception ex)
-            { }
-            finally { connection.Close(); }
-            return dataTable;
+            catch(Exception ex) 
             {
+                //Util.Logger.LogHelper.Log();
             }
+            return dataTable;
+          
         }
     
         public static bool IsPersonExists(int PersonID)

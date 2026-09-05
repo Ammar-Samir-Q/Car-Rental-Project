@@ -1,5 +1,4 @@
-﻿using CarRental_BLL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CarRental_BLL;
 
 namespace CarRental
 {
@@ -58,9 +58,9 @@ namespace CarRental
             }
         }
 
-        private void _LoadDataGridView()
+        private async Task _LoadDataGridView()
         {
-            _dtPeople=clsPeople.GetAllPeople();
+            _dtPeople = await clsPeople.GetAllPeople();
             dgvPeople.DataSource= _dtPeople;
             if(dgvPeople.Rows.Count > 0 )
             {
@@ -93,32 +93,32 @@ namespace CarRental
 
             }
         }
-        private void _RefreashDataGridView()
+        private async Task _RefreashDataGridView()
         {
-            _dtPeople = clsPeople.GetAllPeople();
+            _dtPeople = await clsPeople.GetAllPeople();
             dgvPeople.DataSource= _dtPeople;
             _CountRecords();
         }
 
-        private void frmListPeople_Load(object sender, EventArgs e)
+        private async void frmListPeople_Load(object sender, EventArgs e)
         {
-            _LoadDataGridView();
+            await _LoadDataGridView();
             _FillComboBox();
             _CountRecords();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private async void btnAdd_Click(object sender, EventArgs e)
         {
             Form frm=new frmAddUpdatePerson();
             frm.ShowDialog();
-            _RefreashDataGridView();
+            await _RefreashDataGridView();
         }
 
-        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form frm=new frmAddUpdatePerson((int)dgvPeople.SelectedRows[0].Cells[0].Value);
             frm.ShowDialog();
-            _RefreashDataGridView();
+            await _RefreashDataGridView();
         }
 
         private  void cbFilter_SelectedIndexChanged(object sender, EventArgs e)

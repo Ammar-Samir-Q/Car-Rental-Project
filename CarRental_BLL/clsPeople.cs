@@ -169,9 +169,9 @@ namespace CarRental_BLL
             return clsPepoleData.IsPersonExists(this.PersonID);
         }
 
-        public static DataTable GetAllPeople()
+        public async static Task<DataTable> GetAllPeople()
         {
-            return clsPepoleData.GetAllPeople();
+            return await clsPepoleData.GetAllPeople();
         }
 
     }
