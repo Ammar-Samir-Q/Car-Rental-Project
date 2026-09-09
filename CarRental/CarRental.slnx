@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="../CarRentalDTO/CarRentalDTO.csproj" Id="98281035-5713-4411-8a3a-2c875879e80b" />
+  <Project Path="../CarRentalDTO/CarRental_DTO.csproj" Id="98281035-5713-4411-8a3a-2c875879e80b" />
   <Project Path="../CarRental_BLL/CarRental_BLL.csproj" Id="a2f3ebb5-d05d-41b6-9dfa-8aa2032a6e34" />
   <Project Path="../CarRental_DAL/CarRental_DAL.csproj" Id="495b1b96-f043-43f3-9400-8565f2192aad" />
   <Project Path="CarRental.csproj" Id="4a91e82e-5d05-46a1-9128-b7c617274622" />

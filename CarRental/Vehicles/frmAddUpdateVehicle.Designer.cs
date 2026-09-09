@@ -47,9 +47,19 @@
             this.txtPlateNumber = new System.Windows.Forms.TextBox();
             this.txtRentalPrice = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.cbIsAvailable = new System.Windows.Forms.CheckBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.cbFuel = new System.Windows.Forms.ComboBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.ep = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnRemoveImage = new System.Windows.Forms.Button();
@@ -57,19 +67,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.pbVehicleImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ep)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVehicleImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -80,6 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVehicleImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -257,6 +257,26 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // pictureBox9
+            // 
+            resources.ApplyResources(this.pictureBox9, "pictureBox9");
+            this.ep.SetError(this.pictureBox9, resources.GetString("pictureBox9.Error"));
+            this.ep.SetIconAlignment(this.pictureBox9, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox9.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox9, ((int)(resources.GetObject("pictureBox9.IconPadding"))));
+            this.pictureBox9.Image = global::CarRental.Properties.Resources.icon_Records;
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            resources.ApplyResources(this.pictureBox10, "pictureBox10");
+            this.ep.SetError(this.pictureBox10, resources.GetString("pictureBox10.Error"));
+            this.ep.SetIconAlignment(this.pictureBox10, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox10.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox10, ((int)(resources.GetObject("pictureBox10.IconPadding"))));
+            this.pictureBox10.Image = global::CarRental.Properties.Resources.icon_Category;
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.TabStop = false;
+            // 
             // cbIsAvailable
             // 
             resources.ApplyResources(this.cbIsAvailable, "cbIsAvailable");
@@ -278,6 +298,26 @@
             this.ep.SetIconPadding(this.cbCategory, ((int)(resources.GetObject("cbCategory.IconPadding"))));
             this.cbCategory.Name = "cbCategory";
             // 
+            // pictureBox6
+            // 
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.ep.SetError(this.pictureBox6, resources.GetString("pictureBox6.Error"));
+            this.ep.SetIconAlignment(this.pictureBox6, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox6.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox6, ((int)(resources.GetObject("pictureBox6.IconPadding"))));
+            this.pictureBox6.Image = global::CarRental.Properties.Resources.icons8_status_50;
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
+            this.ep.SetError(this.pictureBox8, resources.GetString("pictureBox8.Error"));
+            this.ep.SetIconAlignment(this.pictureBox8, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox8.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox8, ((int)(resources.GetObject("pictureBox8.IconPadding"))));
+            this.pictureBox8.Image = global::CarRental.Properties.Resources.icon_Milage;
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.TabStop = false;
+            // 
             // cbFuel
             // 
             resources.ApplyResources(this.cbFuel, "cbFuel");
@@ -287,6 +327,66 @@
             this.ep.SetIconAlignment(this.cbFuel, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("cbFuel.IconAlignment"))));
             this.ep.SetIconPadding(this.cbFuel, ((int)(resources.GetObject("cbFuel.IconPadding"))));
             this.cbFuel.Name = "cbFuel";
+            // 
+            // pictureBox7
+            // 
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
+            this.ep.SetError(this.pictureBox7, resources.GetString("pictureBox7.Error"));
+            this.ep.SetIconAlignment(this.pictureBox7, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox7.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox7, ((int)(resources.GetObject("pictureBox7.IconPadding"))));
+            this.pictureBox7.Image = global::CarRental.Properties.Resources.icons8_money_50;
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.ep.SetError(this.pictureBox5, resources.GetString("pictureBox5.Error"));
+            this.ep.SetIconAlignment(this.pictureBox5, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox5.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox5, ((int)(resources.GetObject("pictureBox5.IconPadding"))));
+            this.pictureBox5.Image = global::CarRental.Properties.Resources.icon_Fuel;
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.ep.SetError(this.pictureBox4, resources.GetString("pictureBox4.Error"));
+            this.ep.SetIconAlignment(this.pictureBox4, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox4.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox4, ((int)(resources.GetObject("pictureBox4.IconPadding"))));
+            this.pictureBox4.Image = global::CarRental.Properties.Resources.icons8_date_50;
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.ep.SetError(this.pictureBox3, resources.GetString("pictureBox3.Error"));
+            this.ep.SetIconAlignment(this.pictureBox3, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox3.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox3, ((int)(resources.GetObject("pictureBox3.IconPadding"))));
+            this.pictureBox3.Image = global::CarRental.Properties.Resources.icons8_vehicle_50;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.ep.SetError(this.pictureBox1, resources.GetString("pictureBox1.Error"));
+            this.ep.SetIconAlignment(this.pictureBox1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox1.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox1, ((int)(resources.GetObject("pictureBox1.IconPadding"))));
+            this.pictureBox1.Image = global::CarRental.Properties.Resources.icon_Make;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.ep.SetError(this.pictureBox2, resources.GetString("pictureBox2.Error"));
+            this.ep.SetIconAlignment(this.pictureBox2, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox2.IconAlignment"))));
+            this.ep.SetIconPadding(this.pictureBox2, ((int)(resources.GetObject("pictureBox2.IconPadding"))));
+            this.pictureBox2.Image = global::CarRental.Properties.Resources.iconLicense;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
             // 
             // lblTitle
             // 
@@ -352,106 +452,6 @@
             this.pbVehicleImage.Name = "pbVehicleImage";
             this.pbVehicleImage.TabStop = false;
             // 
-            // pictureBox9
-            // 
-            resources.ApplyResources(this.pictureBox9, "pictureBox9");
-            this.ep.SetError(this.pictureBox9, resources.GetString("pictureBox9.Error"));
-            this.ep.SetIconAlignment(this.pictureBox9, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox9.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox9, ((int)(resources.GetObject("pictureBox9.IconPadding"))));
-            this.pictureBox9.Image = global::CarRental.Properties.Resources.icon_Records;
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            resources.ApplyResources(this.pictureBox10, "pictureBox10");
-            this.ep.SetError(this.pictureBox10, resources.GetString("pictureBox10.Error"));
-            this.ep.SetIconAlignment(this.pictureBox10, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox10.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox10, ((int)(resources.GetObject("pictureBox10.IconPadding"))));
-            this.pictureBox10.Image = global::CarRental.Properties.Resources.icon_Category;
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
-            this.ep.SetError(this.pictureBox6, resources.GetString("pictureBox6.Error"));
-            this.ep.SetIconAlignment(this.pictureBox6, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox6.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox6, ((int)(resources.GetObject("pictureBox6.IconPadding"))));
-            this.pictureBox6.Image = global::CarRental.Properties.Resources.icons8_status_50;
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            resources.ApplyResources(this.pictureBox8, "pictureBox8");
-            this.ep.SetError(this.pictureBox8, resources.GetString("pictureBox8.Error"));
-            this.ep.SetIconAlignment(this.pictureBox8, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox8.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox8, ((int)(resources.GetObject("pictureBox8.IconPadding"))));
-            this.pictureBox8.Image = global::CarRental.Properties.Resources.icon_Milage;
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
-            this.ep.SetError(this.pictureBox7, resources.GetString("pictureBox7.Error"));
-            this.ep.SetIconAlignment(this.pictureBox7, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox7.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox7, ((int)(resources.GetObject("pictureBox7.IconPadding"))));
-            this.pictureBox7.Image = global::CarRental.Properties.Resources.icons8_money_50;
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.ep.SetError(this.pictureBox5, resources.GetString("pictureBox5.Error"));
-            this.ep.SetIconAlignment(this.pictureBox5, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox5.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox5, ((int)(resources.GetObject("pictureBox5.IconPadding"))));
-            this.pictureBox5.Image = global::CarRental.Properties.Resources.icon_Fuel;
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.ep.SetError(this.pictureBox4, resources.GetString("pictureBox4.Error"));
-            this.ep.SetIconAlignment(this.pictureBox4, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox4.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox4, ((int)(resources.GetObject("pictureBox4.IconPadding"))));
-            this.pictureBox4.Image = global::CarRental.Properties.Resources.icons8_date_50;
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.ep.SetError(this.pictureBox3, resources.GetString("pictureBox3.Error"));
-            this.ep.SetIconAlignment(this.pictureBox3, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox3.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox3, ((int)(resources.GetObject("pictureBox3.IconPadding"))));
-            this.pictureBox3.Image = global::CarRental.Properties.Resources.icons8_vehicle_50;
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.ep.SetError(this.pictureBox1, resources.GetString("pictureBox1.Error"));
-            this.ep.SetIconAlignment(this.pictureBox1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox1.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox1, ((int)(resources.GetObject("pictureBox1.IconPadding"))));
-            this.pictureBox1.Image = global::CarRental.Properties.Resources.icon_Make;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.ep.SetError(this.pictureBox2, resources.GetString("pictureBox2.Error"));
-            this.ep.SetIconAlignment(this.pictureBox2, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox2.IconAlignment"))));
-            this.ep.SetIconPadding(this.pictureBox2, ((int)(resources.GetObject("pictureBox2.IconPadding"))));
-            this.pictureBox2.Image = global::CarRental.Properties.Resources.iconLicense;
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
             // frmAddUpdateVehicle
             // 
             resources.ApplyResources(this, "$this");
@@ -470,8 +470,6 @@
             this.Load += new System.EventHandler(this.frmAddUpdateVehicle_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ep)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVehicleImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -482,6 +480,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVehicleImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -62,7 +62,9 @@ SELECT SCOPE_IDENTITY();";
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
 
             return TransactionID;
@@ -121,7 +123,9 @@ WHERE TransactionID=@TransactionID;";
                 IsUpdated = command.ExecuteNonQuery() > 0;
             }
             catch (System.Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsUpdated;
 
@@ -179,7 +183,9 @@ WHERE TransactionID=@TransactionID;";
                 reader.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -238,7 +244,9 @@ WHERE TransactionID=@TransactionID;";
                 reader.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -296,7 +304,9 @@ WHERE TransactionID=@TransactionID;";
                 reader.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -318,6 +328,7 @@ WHERE TransactionID=@TransactionID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -342,7 +353,9 @@ WHERE TransactionID=@TransactionID;";
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return dataTable;
             {
@@ -365,6 +378,8 @@ WHERE TransactionID=@TransactionID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+
 
             }
             finally { connection.Close(); }
@@ -404,7 +419,9 @@ Group by TransactionDate;";
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             return dataTable;
         }
 
@@ -438,7 +455,9 @@ Group by TransactionDate;";
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             return dataTable;
         }
 

@@ -98,6 +98,7 @@ namespace CarRental
             dgvVehicles.DataSource = _dtVehicles;
         }
 
+
         private void frmListVehicles_Load(object sender, EventArgs e)
         {
          
@@ -141,12 +142,20 @@ namespace CarRental
         {
             if (clsGlobalSettings.CurrentUser.Role == clsUsers.enRole.Admin)
             {
+
                 if (MessageBox.Show("Vehicle Will Be Deleted Are You Sure ?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.Cancel)
                 {
                     return;
                 }
+                if (clsVehicle.GetVehicleByID((int)dgvVehicles.SelectedRows[0].Cells[0].Value).GetTotalRentTimes()>0)
+                {
+                    MessageBox.Show("Can't Delete This Vehicle Because it have rental history", "Delete Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
+          
 
-                if (clsVehicle.DeleteVehicle((int)dgvVehicles.SelectedRows[0].Cells[0].Value))
+
+                    if (clsVehicle.DeleteVehicle((int)dgvVehicles.SelectedRows[0].Cells[0].Value))
                 {
                     MessageBox.Show("Vehicle Deleted Succesfully", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -161,8 +170,8 @@ namespace CarRental
                 MessageBox.Show("User Cant Delete Vehicles", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
-          
 
+            _RefreashDataGridView();
 
         }
 
@@ -242,7 +251,7 @@ namespace CarRental
             }
             else
             {
-                _dtVehicles.DefaultView.RowFilter = string.Format("VehicleCategory Like '{0}'",cbVehicleCategory.SelectedIndex);
+                _dtVehicles.DefaultView.RowFilter = string.Format("VehicleCategory Like '{0}'",cbVehicleCategory.SelectedItem.ToString());
 
             }
 
@@ -257,7 +266,7 @@ namespace CarRental
             }
             else
             {
-                _dtVehicles.DefaultView.RowFilter = string.Format("FuelType Like '{0}'", cbFuelType.SelectedIndex);
+                _dtVehicles.DefaultView.RowFilter = string.Format($"FuelType like '{cbFuelType.SelectedItem.ToString()}'");
 
             }
         }

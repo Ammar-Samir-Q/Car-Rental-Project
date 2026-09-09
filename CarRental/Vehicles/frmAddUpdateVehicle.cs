@@ -336,6 +336,24 @@ namespace CarRental
                 ep.SetError(txtYear, "");
 
             }
+
+            if (!int.TryParse(txtYear.Text,out int Year))
+            {
+                e.Cancel = true;
+                ep.SetError(txtYear, "Invalid Year (example : 2025)");
+            }
+            else if(Year<1800||Year>2100)
+            {
+                e.Cancel = true;
+                ep.SetError(txtYear, "Invalid Year (Year must be between 1800-2100)");
+            }
+            else
+            {
+                
+                e.Cancel = false;
+                ep.SetError(txtYear, "");
+                
+            }
         }
 
         private void txtMilage_Validating(object sender, CancelEventArgs e)

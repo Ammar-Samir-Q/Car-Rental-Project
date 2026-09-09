@@ -169,6 +169,7 @@ namespace CarRental
                 e.Handled=!char.IsDigit(e.KeyChar)&&!char.IsControl(e.KeyChar);  
         }
 
+        [Obsolete]
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(MessageBox.Show("Are You Sure To Delete This Booking ?","Confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Information)==DialogResult.Yes)

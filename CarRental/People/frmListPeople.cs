@@ -177,14 +177,14 @@ namespace CarRental
             }
         }
 
-        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form frm = new frmPersonInfo((int)dgvPeople.SelectedRows[0].Cells[0].Value);
             frm.ShowDialog();
-            _RefreashDataGridView();
+            await _RefreashDataGridView();
         }
 
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Person With Person ID : " + dgvPeople.SelectedRows[0].Cells[0].Value +
                 " Will Be Deleted Are You Sure ?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
@@ -198,21 +198,21 @@ namespace CarRental
                     MessageBox.Show("Faild To Delete This Person (Cheack If There is Data Connected To it..)", "Faild", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            _RefreashDataGridView();
+            await _RefreashDataGridView();
         }
 
-        private void customerToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void customerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form frm = new frmAddCustomer((int)dgvPeople.SelectedRows[0].Cells[0].Value,frmAddCustomer.enMode.Convert);
             frm.ShowDialog();
-            _RefreashDataGridView();
+            await _RefreashDataGridView();
         }
 
-        private void userToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void userToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form frm = new frmAddUpdateUser((int)dgvPeople.SelectedRows[0].Cells[0].Value, frmAddUpdateUser.enMode.Convert);
             frm.ShowDialog();
-            _RefreashDataGridView();
+            await _RefreashDataGridView();
         }
 
      

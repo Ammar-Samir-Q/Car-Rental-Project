@@ -183,6 +183,9 @@
   <data name="&gt;&gt;txtModel.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="pictureBox4.Error" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;btnRemoveImage.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -192,14 +195,8 @@
   <data name="pbVehicleImage.Error" xml:space="preserve">
     <value />
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Fuel Type :</value>
-  </data>
   <data name="txtModel.Location" type="System.Drawing.Point, System.Drawing">
     <value>609, 92</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
   </data>
   <data name="&gt;&gt;ep.Type" xml:space="preserve">
     <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -216,14 +213,14 @@
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 24</value>
+  </data>
   <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblVehicleID.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 38</value>
-  </data>
-  <data name="&gt;&gt;pictureBox10.Name" xml:space="preserve">
-    <value>pictureBox10</value>
   </data>
   <data name="cbFuel.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 28</value>
@@ -234,6 +231,15 @@
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="pictureBox4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pictureBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 26</value>
+  </data>
+  <data name="label1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
   <data name="btnRemoveImage.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
@@ -242,9 +248,6 @@
   </data>
   <data name="&gt;&gt;pictureBox6.Name" xml:space="preserve">
     <value>pictureBox6</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>groupBox1</value>
   </data>
   <data name="lblVehicleID.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -267,9 +270,6 @@
   <data name="pictureBox7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
-    <value>btnSave</value>
-  </data>
   <data name="btnRemoveImage.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
@@ -282,7 +282,13 @@
   <data name="txtRentalPrice.Location" type="System.Drawing.Point, System.Drawing">
     <value>638, 338</value>
   </data>
+  <data name="cbCategory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
   <data name="label9.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label7.Error" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
@@ -293,6 +299,9 @@
   </data>
   <data name="txtPlateNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>187, 26</value>
+  </data>
+  <data name="txtMilage.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -315,17 +324,11 @@
   <data name="txtYear.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="&gt;&gt;cbCategory.Name" xml:space="preserve">
-    <value>cbCategory</value>
-  </data>
   <data name="cbIsAvailable.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
   <data name="&gt;&gt;txtPlateNumber.Parent" xml:space="preserve">
     <value>groupBox1</value>
-  </data>
-  <data name="txtYear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 26</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 24</value>
@@ -357,29 +360,32 @@
   <data name="label1.Error" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;txtModel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnSetImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1097, 391</value>
   </data>
   <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="txtPlateNumber.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="btnSave.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="btnSetImage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 26</value>
   </data>
   <data name="btnSetImage.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="label1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
+  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;txtRentalPrice.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -420,9 +426,6 @@
   <data name="label3.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pictureBox10.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 144</value>
   </data>
@@ -432,8 +435,8 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Vehicle ID :</value>
   </data>
-  <data name="txtMilage.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
   </data>
   <data name="pictureBox2.Error" xml:space="preserve">
     <value />
@@ -449,9 +452,6 @@
   </data>
   <data name="pictureBox10.Error" xml:space="preserve">
     <value />
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="pictureBox10.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
@@ -486,14 +486,11 @@
   <data name="lblVehicleID.Text" xml:space="preserve">
     <value>[???]</value>
   </data>
-  <data name="btnSetImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1097, 391</value>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtYear.Parent" xml:space="preserve">
     <value>groupBox1</value>
-  </data>
-  <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="cbIsAvailable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -510,11 +507,11 @@
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="cbCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Make :</value>
   </data>
   <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -558,17 +555,14 @@
   <data name="pictureBox7.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
   <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="lblTitle.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;cbFuel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pbVehicleImage.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="btnRemoveImage.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 35</value>
@@ -585,14 +579,14 @@
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;btnSetImage.Name" xml:space="preserve">
-    <value>btnSetImage</value>
-  </data>
   <data name="label1.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>445, 146</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label10.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
@@ -618,8 +612,8 @@
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 26</value>
+  <data name="btnSave.Error" xml:space="preserve">
+    <value />
   </data>
   <data name="groupBox1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
@@ -627,8 +621,8 @@
   <data name="btnSave.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 210</value>
   </data>
   <data name="txtMilage.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
@@ -638,6 +632,9 @@
   </data>
   <data name="&gt;&gt;label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtMake.Name" xml:space="preserve">
+    <value>txtMake</value>
   </data>
   <data name="cbFuel.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
@@ -657,9 +654,6 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 24</value>
   </data>
-  <data name="&gt;&gt;btnSetImage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
@@ -678,6 +672,9 @@
   <data name="label6.Error" xml:space="preserve">
     <value />
   </data>
+  <data name="cbFuel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 210</value>
+  </data>
   <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -689,6 +686,9 @@
   </data>
   <data name="txtRentalPrice.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 24</value>
@@ -714,11 +714,11 @@
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
-  </data>
   <data name="label4.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="pbVehicleImage.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
   </data>
   <data name="txtRentalPrice.Error" xml:space="preserve">
     <value />
@@ -732,6 +732,9 @@
   <data name="txtYear.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;pbVehicleImage.Name" xml:space="preserve">
+    <value>pbVehicleImage</value>
+  </data>
   <data name="pictureBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>582, 338</value>
   </data>
@@ -740,9 +743,6 @@
   </data>
   <data name="&gt;&gt;pbVehicleImage.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="btnClose.Error" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;txtMilage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -756,13 +756,16 @@
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
+  <data name="btnRemoveImage.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
   <data name="lblVehicleID.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 24</value>
   </data>
   <data name="cbCategory.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 28</value>
   </data>
-  <data name="pictureBox8.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="pictureBox10.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
@@ -772,6 +775,9 @@
     <value />
   </data>
   <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="groupBox1.Error" xml:space="preserve">
@@ -786,14 +792,14 @@
   <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 39</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Milage :</value>
-  </data>
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="btnSetImage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
+  <data name="label10.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVehicleID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;txtModel.ZOrder" xml:space="preserve">
     <value>21</value>
@@ -809,9 +815,6 @@
   </data>
   <data name="txtYear.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;cbIsAvailable.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;txtPlateNumber.ZOrder" xml:space="preserve">
     <value>12</value>
@@ -833,6 +836,9 @@
   </data>
   <data name="txtModel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
+  </data>
+  <data name="pictureBox6.Error" xml:space="preserve">
+    <value />
   </data>
   <data name="btnRemoveImage.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
@@ -867,8 +873,8 @@
   <data name="cbCategory.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pbVehicleImage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 26</value>
   </data>
   <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -915,14 +921,17 @@
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="pictureBox10.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Make :</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="&gt;&gt;txtModel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 26</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -939,8 +948,8 @@
   <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 142</value>
   </data>
-  <data name="btnSave.Error" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -954,7 +963,7 @@
   <data name="txtPlateNumber.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="btnRemoveImage.Error" xml:space="preserve">
+  <data name="lblTitle.Error" xml:space="preserve">
     <value />
   </data>
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
@@ -963,20 +972,14 @@
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 26</value>
   </data>
-  <data name="txtMake.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="&gt;&gt;pbVehicleImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="txtPlateNumber.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;pictureBox8.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblVehicleID.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;txtRentalPrice.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1047,23 +1050,26 @@
   <data name="pictureBox3.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
     <value>1016, 473</value>
+  </data>
+  <data name="txtPlateNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="pictureBox7.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
   </data>
   <data name="pictureBox5.Error" xml:space="preserve">
     <value />
   </data>
-  <data name="pictureBox6.Error" xml:space="preserve">
+  <data name="btnClose.Error" xml:space="preserve">
     <value />
   </data>
   <data name="pictureBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>553, 142</value>
   </data>
-  <data name="txtPlateNumber.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="&gt;&gt;pbVehicleImage.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Year :</value>
@@ -1077,8 +1083,8 @@
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 36</value>
   </data>
-  <data name="pictureBox7.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
+  <data name="txtMake.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>18</value>
@@ -1128,14 +1134,11 @@
   <data name="&gt;&gt;btnRemoveImage.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label7.Error" xml:space="preserve">
+  <data name="btnRemoveImage.Error" xml:space="preserve">
     <value />
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Vehicle Info</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;cbCategory.Name" xml:space="preserve">
+    <value>cbCategory</value>
   </data>
   <data name="pictureBox5.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1143,14 +1146,14 @@
   <data name="label10.Text" xml:space="preserve">
     <value>Rental Price (Per Day) :</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="txtMilage.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="cbFuel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 210</value>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Fuel Type :</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1161,8 +1164,8 @@
   <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;pbVehicleImage.Name" xml:space="preserve">
-    <value>pbVehicleImage</value>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1179,8 +1182,8 @@
   <data name="pictureBox9.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="cbCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Milage :</value>
   </data>
   <data name="txtRentalPrice.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -1188,8 +1191,8 @@
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 24</value>
   </data>
-  <data name="&gt;&gt;txtMake.Name" xml:space="preserve">
-    <value>txtMake</value>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtMake.ZOrder" xml:space="preserve">
     <value>17</value>
@@ -1200,8 +1203,8 @@
   <data name="pictureBox10.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="pictureBox4.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;btnSetImage.Name" xml:space="preserve">
+    <value>btnSetImage</value>
   </data>
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -1209,8 +1212,8 @@
   <data name="pictureBox6.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnSetImage.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 86</value>
@@ -1233,8 +1236,8 @@
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pictureBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 26</value>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -1248,11 +1251,8 @@
   <data name="&gt;&gt;lblVehicleID.Name" xml:space="preserve">
     <value>lblVehicleID</value>
   </data>
-  <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1266,8 +1266,8 @@
   <data name="&gt;&gt;txtMilage.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="btnRemoveImage.Text" xml:space="preserve">
-    <value>Remove</value>
+  <data name="&gt;&gt;cbIsAvailable.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1278,11 +1278,11 @@
   <data name="txtYear.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 24</value>
+  <data name="&gt;&gt;pictureBox10.Name" xml:space="preserve">
+    <value>pictureBox10</value>
   </data>
-  <data name="pbVehicleImage.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Vehicle Info</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 24</value>
@@ -1308,8 +1308,8 @@
   <data name="txtMilage.Location" type="System.Drawing.Point, System.Drawing">
     <value>609, 146</value>
   </data>
-  <data name="cbCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>605, 210</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtRentalPrice.Name" xml:space="preserve">
     <value>txtRentalPrice</value>
@@ -1317,8 +1317,8 @@
   <data name="txtMake.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="pictureBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 26</value>
+  <data name="&gt;&gt;pictureBox10.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1326,17 +1326,20 @@
   <data name="&gt;&gt;txtModel.Name" xml:space="preserve">
     <value>txtModel</value>
   </data>
-  <data name="txtMilage.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="pictureBox4.Error" xml:space="preserve">
-    <value />
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="btnClose.Text" xml:space="preserve">
-    <value>Close</value>
+  <data name="pictureBox8.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;cbFuel.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>555, 38</value>
@@ -1359,11 +1362,8 @@
   <data name="lblVehicleID.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
   </data>
-  <data name="label10.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="pbVehicleImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -1398,8 +1398,8 @@
   <data name="lblTitle.Text" xml:space="preserve">
     <value>Add-Vehicle</value>
   </data>
-  <data name="lblTitle.Error" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cbFuel.Error" xml:space="preserve">
     <value />
@@ -1407,16 +1407,16 @@
   <data name="btnClose.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
   </data>
-  <data name="cbCategory.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <metadata name="ep.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>ar</value>
+  </metadata>
+  <metadata name="ep.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

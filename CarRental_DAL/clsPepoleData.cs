@@ -57,7 +57,9 @@ namespace CarRental_DAL
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
 
             return PersonID;
@@ -108,9 +110,11 @@ WHERE PersonID=@PersonID;";
                 connection.Open();
                 IsUpdated = command.ExecuteNonQuery()>0;
             }
-            catch (System.Exception ex) 
-                { }
-            finally{ connection.Close(); }
+            catch (System.Exception ex)
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
+            finally { connection.Close(); }
             return IsUpdated;
 
         }
@@ -157,7 +161,9 @@ WHERE PersonID=@PersonID;";
                 reader.Close();
             }
             catch(Exception ex)
-            {  }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close();}
             return IsFound;
 
@@ -206,7 +212,9 @@ WHERE PersonID=@PersonID;";
                 reader.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -228,6 +236,7 @@ WHERE PersonID=@PersonID;";
             }
             catch (Exception ex) 
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close();}
@@ -259,7 +268,7 @@ WHERE PersonID=@PersonID;";
             }
             catch(Exception ex) 
             {
-                //Util.Logger.LogHelper.Log();
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
             }
             return dataTable;
           
@@ -281,6 +290,7 @@ WHERE PersonID=@PersonID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -306,6 +316,7 @@ WHERE PersonID=@PersonID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }

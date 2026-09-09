@@ -55,8 +55,8 @@
             // 
             // cbActive
             // 
-            this.cbActive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.cbActive, "cbActive");
+            this.cbActive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbActive.FormattingEnabled = true;
             this.cbActive.Items.AddRange(new object[] {
             resources.GetString("cbActive.Items"),
@@ -72,8 +72,8 @@
             // 
             // cbFilter
             // 
-            this.cbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.cbFilter, "cbFilter");
+            this.cbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFilter.FormattingEnabled = true;
             this.cbFilter.Items.AddRange(new object[] {
             resources.GetString("cbFilter.Items"),
@@ -102,21 +102,21 @@
             // 
             // btnClose
             // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnClose, "btnClose");
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.Name = "btnClose";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // dgvUsers
             // 
+            resources.ApplyResources(this.dgvUsers, "dgvUsers");
             this.dgvUsers.AllowUserToAddRows = false;
             this.dgvUsers.AllowUserToDeleteRows = false;
             this.dgvUsers.AllowUserToOrderColumns = true;
             this.dgvUsers.BackgroundColor = System.Drawing.Color.White;
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsers.ContextMenuStrip = this.contextMenuStrip1;
-            resources.ApplyResources(this.dgvUsers, "dgvUsers");
             this.dgvUsers.MultiSelect = false;
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.ReadOnly = true;
@@ -133,29 +133,29 @@
             // 
             // infoToolStripMenuItem
             // 
-            this.infoToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_info;
             resources.ApplyResources(this.infoToolStripMenuItem, "infoToolStripMenuItem");
+            this.infoToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_info;
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
-            this.editToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_Edit;
             resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
+            this.editToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_Edit;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_Delete32;
             resources.ApplyResources(this.deleteToolStripMenuItem, "deleteToolStripMenuItem");
+            this.deleteToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_Delete32;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // cbRole
             // 
-            this.cbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.cbRole, "cbRole");
+            this.cbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRole.FormattingEnabled = true;
             this.cbRole.Items.AddRange(new object[] {
             resources.GetString("cbRole.Items"),
@@ -173,22 +173,22 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::CarRental.Properties.Resources.Icon_Filter;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::CarRental.Properties.Resources.Icon_Filter;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CarRental.Properties.Resources.Users;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::CarRental.Properties.Resources.Users;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Image = global::CarRental.Properties.Resources.icon_Add;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.Image = global::CarRental.Properties.Resources.icon_Add;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);

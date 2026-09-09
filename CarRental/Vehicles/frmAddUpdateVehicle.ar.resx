@@ -150,7 +150,7 @@
     <value>173, 39</value>
   </data>
   <data name="lblTitle.Text" xml:space="preserve">
-    <value>اضافة مركبة</value>
+    <value>إضافة مركبة</value>
   </data>
   <data name="pbVehicleImage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -213,9 +213,6 @@
     <value>NoControl</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">

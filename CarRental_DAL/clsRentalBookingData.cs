@@ -76,7 +76,9 @@ namespace CarRental_DAL
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
 
             return BookingID;
@@ -132,7 +134,9 @@ WHERE BookingID=@BookingID;";
                 IsUpdated = command.ExecuteNonQuery() > 0;
             }
             catch (System.Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsUpdated;
 
@@ -181,7 +185,9 @@ WHERE BookingID=@BookingID;";
                 reader.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -202,6 +208,7 @@ WHERE BookingID=@BookingID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -226,7 +233,9 @@ WHERE BookingID=@BookingID;";
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return dataTable;
             {
@@ -249,6 +258,7 @@ WHERE BookingID=@BookingID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -275,6 +285,7 @@ WHERE BookingID=@BookingID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -299,6 +310,7 @@ WHERE ReturnID is not null;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -336,7 +348,9 @@ Group by Vehicles.Model;";
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             return dataTable;
         }
 
@@ -372,7 +386,9 @@ WHERE Vehicles.IsAvailableForRent=0;";
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             return dataTable;
         }
 

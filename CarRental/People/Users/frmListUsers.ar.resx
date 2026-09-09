@@ -138,10 +138,7 @@
     <value>244, 42</value>
   </data>
   <data name="lblTitle.Text" xml:space="preserve">
-    <value>ادراة المستخدمين</value>
-  </data>
-  <data name="btnClose.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>إدارة المستخدمين</value>
   </data>
   <data name="btnClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

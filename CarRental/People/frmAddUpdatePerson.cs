@@ -132,7 +132,8 @@ namespace CarRental
         {
             if (pbImage.ImageLocation == _Person.ImagePath)
                 return true;
-
+            if (string.IsNullOrEmpty(_Person.ImagePath) && string.IsNullOrEmpty(_Person.ImagePath))
+                return true;
 
             //Case 1 If Picture Is Removed And The Path On The Database Exists = Delete Image And Change ImagePath In DB To Null
             if (string.IsNullOrEmpty(pbImage.ImageLocation)&&!string.IsNullOrEmpty(_Person.ImagePath))

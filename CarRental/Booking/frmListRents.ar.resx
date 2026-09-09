@@ -144,37 +144,31 @@
     <value>NoControl</value>
   </data>
   <data name="infoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 56</value>
+    <value>208, 56</value>
   </data>
   <data name="infoToolStripMenuItem.Text" xml:space="preserve">
     <value>التفاصيل</value>
   </data>
   <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 56</value>
+    <value>208, 56</value>
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>تعديل</value>
   </data>
-  <data name="deleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 56</value>
-  </data>
-  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
-    <value>حذف</value>
-  </data>
   <data name="setReturnToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 56</value>
+    <value>208, 56</value>
   </data>
   <data name="setReturnToolStripMenuItem.Text" xml:space="preserve">
     <value>ارجاع</value>
   </data>
   <data name="returnInfoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 56</value>
+    <value>208, 56</value>
   </data>
   <data name="returnInfoToolStripMenuItem.Text" xml:space="preserve">
     <value>تفاصيل الارجاع</value>
   </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 306</value>
+    <value>209, 228</value>
   </data>
   <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

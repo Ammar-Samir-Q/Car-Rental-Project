@@ -58,9 +58,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CarRentalDTO\CarRentalDTO.csproj">
+    <ProjectReference Include="..\CarRentalDTO\CarRental_DTO.csproj">
       <Project>{98281035-5713-4411-8a3a-2c875879e80b}</Project>
-      <Name>CarRentalDTO</Name>
+      <Name>CarRental_DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

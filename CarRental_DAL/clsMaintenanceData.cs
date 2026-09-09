@@ -42,7 +42,9 @@ SELECT SCOPE_IDENTITY();
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
 
             return MaintenanceID;
@@ -73,7 +75,9 @@ WHERE MaintenanceID=@MainrenanceID;";
                 IsUpdated = command.ExecuteNonQuery() > 0;
             }
             catch (System.Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsUpdated;
 
@@ -108,7 +112,9 @@ WHERE MaintenanceID=@MainrenanceID;";
                 reader.Close();
             }
             catch (Exception ex)
-            {  }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -129,6 +135,7 @@ WHERE MaintenanceID=@MainrenanceID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -153,7 +160,9 @@ WHERE MaintenanceID=@MainrenanceID;";
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return dataTable;
             {
@@ -180,7 +189,9 @@ WHERE MaintenanceID=@MainrenanceID;";
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return dataTable;
             {
@@ -204,6 +215,7 @@ WHERE MaintenanceID=@MainrenanceID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }

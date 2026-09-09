@@ -29,6 +29,7 @@ namespace CarRental_DAL
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
                 connection.Close();
                 return false;
             }
@@ -52,6 +53,7 @@ namespace CarRental_DAL
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
                 connection.Close();
                 return false;
             }

@@ -46,8 +46,10 @@ namespace CarRental
 
                 }
             }
-            catch(Exception ex) 
-            { }
+            catch(Exception ex)
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             return false;
         }
 

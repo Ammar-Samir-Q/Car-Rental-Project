@@ -156,7 +156,7 @@ namespace CarRental_BLL
 
         public static bool IsUserExists(string UserName,string Password)
         {
-            return clsUserData.IsUserExists(UserName,Password);
+            return clsUserData.IsUserExists(UserName,Util.Security.SecurityHelper.HashData(Password));
         }
 
         public bool IsExists()

@@ -40,7 +40,9 @@ SELECT SCOPE_IDENTITY();";
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
 
             return CustomerID;
@@ -68,7 +70,9 @@ WHERE CustomerID=@CustomerID;";
                 IsUpdated = command.ExecuteNonQuery() > 0;
             }
             catch (System.Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsUpdated;
 
@@ -97,7 +101,9 @@ WHERE CustomerID=@CustomerID;";
                 reader.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -127,7 +133,9 @@ WHERE CustomerID=@CustomerID;";
                 reader.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -148,6 +156,7 @@ WHERE CustomerID=@CustomerID;";
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -172,7 +181,9 @@ WHERE CustomerID=@CustomerID;";
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return dataTable;
             {
@@ -199,7 +210,9 @@ RentalPricePerDay,CreatedBy FROM RentalBooking_View WHERE CustomerID=@CustomerID
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return dataTable;
             {
@@ -223,6 +236,7 @@ RentalPricePerDay,CreatedBy FROM RentalBooking_View WHERE CustomerID=@CustomerID
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -248,7 +262,7 @@ RentalPricePerDay,CreatedBy FROM RentalBooking_View WHERE CustomerID=@CustomerID
             }
             catch (Exception ex)
             {
-
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
             }
             finally { connection.Close(); }
             return IsExists;
@@ -273,7 +287,7 @@ RentalPricePerDay,CreatedBy FROM RentalBooking_View WHERE CustomerID=@CustomerID
             }
             catch (Exception ex)
             {
-
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
             }
             finally { connection.Close(); }
             return IsExists;
@@ -301,7 +315,7 @@ WHERE CustomerID=@CustomerID;
             }
             catch(Exception ex)
             {
-
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
             }
             finally { connection.Close(); }
             return TotalRentTimes;
@@ -327,7 +341,7 @@ ORDER BY RentalStartDate DESC
             }
             catch (Exception ex)
             {
-
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
             }
             finally { connection.Close(); }
             return LastRentDate;
@@ -350,6 +364,7 @@ ORDER BY RentalStartDate DESC
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }

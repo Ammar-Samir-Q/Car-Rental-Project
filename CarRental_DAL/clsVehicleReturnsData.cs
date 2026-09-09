@@ -64,7 +64,9 @@ INSERT INTO [dbo].[VehicleReturns]
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
 
             return ReturnID;
@@ -107,7 +109,9 @@ INSERT INTO [dbo].[VehicleReturns]
                 IsUpdated = command.ExecuteNonQuery() > 0;
             }
             catch (System.Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsUpdated;
 
@@ -148,7 +152,9 @@ INSERT INTO [dbo].[VehicleReturns]
                 reader.Close();
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -169,6 +175,7 @@ INSERT INTO [dbo].[VehicleReturns]
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -193,7 +200,9 @@ INSERT INTO [dbo].[VehicleReturns]
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return dataTable;
             {
@@ -216,6 +225,7 @@ INSERT INTO [dbo].[VehicleReturns]
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -243,6 +253,7 @@ INSERT INTO [dbo].[VehicleReturns]
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }

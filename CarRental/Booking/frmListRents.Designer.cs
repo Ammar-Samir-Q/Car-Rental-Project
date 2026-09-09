@@ -41,7 +41,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setReturnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -122,7 +121,6 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.infoToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.deleteToolStripMenuItem,
             this.setReturnToolStripMenuItem,
             this.returnInfoToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -141,13 +139,6 @@
             this.editToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_Edit;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            resources.ApplyResources(this.deleteToolStripMenuItem, "deleteToolStripMenuItem");
-            this.deleteToolStripMenuItem.Image = global::CarRental.Properties.Resources.icon_Delete32;
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // setReturnToolStripMenuItem
             // 
@@ -226,7 +217,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setReturnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem returnInfoToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -40,7 +40,9 @@ namespace CarRental_DAL
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
 
             return UserID;
@@ -51,14 +53,15 @@ namespace CarRental_DAL
             bool IsUpdated = false;
             SqlConnection connection = new SqlConnection(DataHelper.ConnectionString);
             string Query = @"Update Users
-Set PersonID=@PersonID,
-UserName=@UserName,
-Password=@Password,
-Role=@Role,
-IsActive=@IsActive,
-CreationDate=@CreationDate
-WHERE UserID=@UserID;
-";
+                    Set PersonID=@PersonID,
+                    UserName=@UserName,
+                    Password=@Password,
+                    Role=@Role,
+                    IsActive=@IsActive,
+                    CreationDate=@CreationDate
+                    WHERE UserID=@UserID;
+                    ";
+
             SqlCommand command = new SqlCommand(Query, connection);
             command.Parameters.AddWithValue("@UserID", UserID);
             command.Parameters.AddWithValue("@PersonID", PersonID);
@@ -76,7 +79,9 @@ WHERE UserID=@UserID;
                 IsUpdated = command.ExecuteNonQuery() > 0;
             }
             catch (System.Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsUpdated;
 
@@ -107,7 +112,9 @@ WHERE UserID=@UserID;
                 reader.Close();
             }
             catch (Exception ex)
-            {  }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return IsFound;
 
@@ -143,7 +150,7 @@ WHERE UserID=@UserID;
             }
             catch (Exception ex)
             {
-               // Util.Logger.LogHelper.Log();
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
             }
 
             return User;
@@ -181,7 +188,7 @@ WHERE UserID=@UserID;
             }
             catch (Exception ex)
             {
-                // Util.Logger.LogHelper.Log();
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
             }
 
             return User;
@@ -207,7 +214,9 @@ WHERE UserID=@UserID;
             
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return UserID;
 
@@ -228,6 +237,7 @@ WHERE UserID=@UserID;
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -252,7 +262,9 @@ WHERE UserID=@UserID;
 
             }
             catch (Exception ex)
-            { }
+            {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+            }
             finally { connection.Close(); }
             return dataTable;
             {
@@ -275,6 +287,8 @@ WHERE UserID=@UserID;
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
+
 
             }
             finally { connection.Close(); }
@@ -300,6 +314,7 @@ WHERE UserID=@UserID;
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
@@ -327,6 +342,7 @@ WHERE UserID=@UserID;
             }
             catch (Exception ex)
             {
+                Util.Logger.LogHelper.Log("CarRental", ex.Message, System.Diagnostics.EventLogEntryType.Error);
 
             }
             finally { connection.Close(); }
